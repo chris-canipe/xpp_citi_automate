@@ -1032,30 +1032,7 @@ For more information see "Sorting the Unicode Character Set" in the CITI manual 
 
 This module supercedes C<XPP::CITI::Modify>. It includes a number of updates, design improvements (Moose), has increased flexibility, and it can handle multi-level extracts. This is not backward-compatible with C<XPP::CITI::Modify>.
 
-=head1 WHERE IS THIS USED?
-
-Find the jobs using this tool with this command:
-
-=over 4
-
-C<find /xppdata/handles /usr/local/xyvision/sd_liz -type f -name '*.p[ml]' -exec fgrep 'use XPP::CITI::Automate' {} /dev/null \;>
-
-=back
-
-=head1 HOW IS THIS BEING USED?
-
-Gather all of the code with this command:
-
-=over 4
-
-C<find /xppdata/handles /usr/local/xyvision/sd_liz -type f -name '*.p[ml]' -exec sh -c 'fgrep -s XPP::CITI::Automate $0 && echo $0 && echo && cat $0' {} \; | tee out.txt>
-
-=back
-
 =head1 AUTHOR
 
-Chris Canipe <chris.canipe@rrd.com>
+Chris Canipe <chris.canipe@gmail.com>
 
-=head1 CHANGELOG
-
-None yet. This is a new module.
